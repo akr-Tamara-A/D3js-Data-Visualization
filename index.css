@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Tahoma', sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  margin: 0;
+  background-color: slategray;
+}
+
+#diagram {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.title {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+}
+
+.source {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: skyblue
+}
+
+#tooltip {
+  background-color: skyblue;
+  z-index: 100;
+  padding: 10px;
+  position: absolute;
+  width: 150px;
+  border-radius: 5px;
+}
+
+#tooltip p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+#tooltip-date {
+  font-weight: bold;
+}
+
+#tooltip-gdp {
+  opacity: 0.8
+}
